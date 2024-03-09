@@ -1,0 +1,371 @@
+@font-face {
+  font-family: maven;
+  src: url(../fonts/Maven/MavenPro-VariableFont_wght.ttf);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FCFCFC;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c85000;
+  border-radius: 10px;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: maven;
+}
+
+body {
+  background: #f5f6fa;
+}
+
+.wrapper .sidebar {
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8rem;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+  border-right: solid #F1F1F1;
+  border-width: 2px;
+  flex-direction: column;
+  gap: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .sidebar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.5s linear;
+  border: solid transparent;
+  border-radius: 18px;
+  padding: 0.5rem;
+}
+.wrapper .sidebar a:hover {
+  color: #F1F1F1;
+  background: black;
+}
+
+.cen_sec {
+  width: 58%;
+  margin-left: 10rem;
+}
+.cen_sec .top_navContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.cen_sec .top_navContent .heading {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.cen_sec .top_navContent h2 {
+  padding: 1.3rem 1.3rem 1.3rem 0;
+}
+.cen_sec .top_navContent .Search_bar {
+  border-radius: 5px;
+  width: 36rem;
+  height: 2rem;
+  background: #FFFFFF;
+  border: none;
+  padding: 1.5rem;
+}
+.cen_sec .Tab_menu {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cen_sec .Tab_menu .tab_filter {
+  background-color: #fff;
+  width: 73rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.cen_sec .Tab_menu .tab_filter .tabs {
+  background: #FFFFFF;
+  padding: 0.4rem;
+  display: flex;
+  gap: 1rem;
+  width: 60rem;
+}
+.cen_sec .Tab_menu .tab_filter .tabs button:hover {
+  background: #c85000;
+  color: #fff;
+}
+.cen_sec .Tab_menu .tab_filter .tabs .rts___tab___selected {
+  background: #c85000;
+  color: #fff;
+}
+.cen_sec .Tab_menu .tab_filter .trigger-button {
+  cursor: pointer;
+}
+.cen_sec .card_sec_tile {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 43rem;
+  overflow-y: auto;
+}
+.cen_sec .card_sec_tile .card_tile {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 13.46rem;
+  background: #fff;
+  border-radius: 10px;
+  height: 14rem;
+}
+.cen_sec .card_sec_tile .card_tile:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.cen_sec .card_sec_tile .card_tile img {
+  width: 13rem;
+  height: 9rem;
+  padding: 0.6rem;
+}
+.cen_sec .card_sec_tile .card_tile .container_tile {
+  padding: 0px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+}
+.cen_sec .card_sec_tile .card_tile .container_tile a {
+  padding: 11px 15px;
+  background: #c85000;
+  border-radius: 6px;
+  color: #F1F1F1;
+  text-decoration: none;
+}
+.cen_sec .card_sec_list {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 43rem;
+  overflow-y: auto;
+}
+.cen_sec .card_sec_list .card_list {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 18.46rem;
+  background: #fff;
+  border-radius: 10px;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cen_sec .card_sec_list .card_list:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.cen_sec .card_sec_list .card_list .card_list_inner {
+  width: 17rem;
+  height: 8rem;
+}
+.cen_sec .card_sec_list .card_list .card_list_inner .image_View {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cen_sec .card_sec_list .card_list .card_list_inner img {
+  width: 5rem;
+  height: 4.7rem;
+  padding: 0.6rem 0;
+}
+.cen_sec .card_sec_list .card_list .card_list_inner h4 {
+  padding-left: 1rem;
+}
+.cen_sec .card_sec_list .card_list .card_list_inner .container_list {
+  padding: 0px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 46px;
+}
+.cen_sec .card_sec_list .card_list .card_list_inner .container_list a {
+  padding: 11px 15px;
+  background: #c85000;
+  border-radius: 6px;
+  color: #F1F1F1;
+  text-decoration: none;
+}
+
+.Right_menu {
+  right: 0;
+  display: flex;
+  position: fixed;
+  background: #fff;
+  width: 34rem;
+  height: 100%;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.Right_menu .add_item {
+  border-bottom: solid #F1F1F1;
+  border-width: 2px;
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Right_menu .add_item .right_tbtn {
+  flex: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Right_menu .add_item .right_tbtn a {
+  background-color: #F5F5F5;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  transition: all 250ms;
+  width: auto;
+}
+.Right_menu .add_item .right_tbtn .action_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Right_menu .order_sec {
+  height: 46%;
+  overflow-y: scroll;
+}
+.Right_menu .order_sec .orders {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Right_menu .order_sec .orders .items {
+  display: flex;
+  justify-content: space-between;
+  flex: 0.9;
+}
+.Right_menu .order_sec .orders .items .item_name {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Right_menu .order_sec .orders .items .item_name img {
+  width: 6rem;
+}
+.Right_menu .order_sec .orders .items .item_name h4 {
+  padding-left: 1rem;
+}
+.Right_menu .order_sec .orders .items .price {
+  text-align: right;
+}
+.Right_menu .order_sec .orders .items .price .quantity {
+  display: flex;
+}
+.Right_menu .order_sec .orders .items .price .quantity input {
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding-left: 0.7rem;
+}
+.Right_menu .order_sec .orders .items .price .quantity div {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: #c85000;
+}
+.Right_menu .order_sec .orders .items .price .quantity div .quantity_icon {
+  font-size: 14px;
+  color: #F1F1F1;
+}
+.Right_menu .pricing_tile .total_price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.Right_menu .pricing_tile .total_price .priceBox {
+  flex: 0.9;
+  border-top: dashed #F1F1F1;
+  border-bottom: dashed #F1F1F1;
+  padding: 1rem 0;
+}
+.Right_menu .pricing_tile .total_price .priceBox .price_lines {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.4rem;
+}
+.Right_menu .pricing_tile .grand_total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.Right_menu .pricing_tile .grand_total .priceBox {
+  flex: 0.9;
+}
+.Right_menu .pricing_tile .grand_total .priceBox .price_lines {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.4rem;
+}
+.Right_menu .pricing_tile .grand_total_btn {
+  display: flex;
+  justify-content: center;
+}
+.Right_menu .pricing_tile .grand_total_btn .BtnBox {
+  display: flex;
+  flex-direction: column;
+  flex: 0.9;
+  gap: 0.5rem;
+}
+.Right_menu .pricing_tile .grand_total_btn .BtnBox a {
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  transition: all 250ms;
+  width: auto;
+  text-align: center;
+}
+.Right_menu .pricing_tile .grand_total_btn .BtnBox .order_btn {
+  background-color: #c85000;
+  color: #F5F5F5;
+}
+.Right_menu .pricing_tile .grand_total_btn .BtnBox .print_btn {
+  border: dashed #c85000;
+  color: gray;
+}/*# sourceMappingURL=main.css.map */
